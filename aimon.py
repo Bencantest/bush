@@ -17,14 +17,14 @@ class Groq:
     def chat_completions(self, messages, model, temperature=1, max_completion_tokens=1024, top_p=1, stream=False, stop=None):
         """
         Makes a POST request to the Groq API for chat completions, with support for streaming responses.
-        :param messages: List of messages to send to the API.
-        :param model: The language model to use.
-        :param temperature: Sampling temperature.
-        :param max_completion_tokens: Maximum number of tokens to generate.
-        :param top_p: Controls nucleus sampling.
-        :param stream: Whether to stream responses.
-        :param stop: Stop sequences to end completion.
-        :return: The API response (dict) if not streaming, or a generator if streaming.
+         List of messages to send to the API.
+        The language model to use.
+        temperature: Sampling temperature.
+        max_completion_tokens: Maximum number of tokens to generate.
+        top_p: Controls nucleus sampling.
+        stream: Whether to stream responses.
+        stop: Stop sequences to end completion.
+         The API response (dict) if not streaming, or a generator if streaming.
         """
         url = f"{self.base_url}/chat/completions"
         headers = {
@@ -111,8 +111,8 @@ def analyze_system_data(client, system_info, processes):
     prompt += "\nRunning Processes:\n"
     if processes:
         # Limit the number of processes sent to the AI to avoid exceeding token limits
-        # You might want to sort by CPU/Memory or filter for unusual processes here
-        # For simplicity, let's take the top N or filter for high resource users
+
+        #  take the top N or filter for high resource users
         processes_for_prompt = sorted(processes, key=lambda p: p.get('cpu_percent', 0), reverse=True)[:20] # Example: top 20 by CPU
 
         for p in processes_for_prompt:
@@ -143,8 +143,8 @@ def analyze_system_data(client, system_info, processes):
 
 
 if __name__ == "__main__":
-    # This block is for direct testing of aimonitor.py if needed,
-    # but the primary use case will be being called by system_monitor.py
+    # block is for direct testing of aimonitor.py if needed,
+    #  primary use case will be being called by system_monitor.py
     groq_api_key = os.environ.get("GROQ_API_KEY")
 
     if not groq_api_key:
@@ -155,7 +155,6 @@ if __name__ == "__main__":
     groq_client = initialize_client(groq_api_key)
 
     # Example of calling analyze_system_data with dummy data
-    # In the integrated version, system_monitor.py will provide this data
     print("Running aimonitor.py in standalone test mode...")
     try:
         # Collect actual data for the test run

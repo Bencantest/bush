@@ -6,7 +6,7 @@ import sys
 import os
 
 # Import the aimonitor script
-# Make sure aimonitor.py is in the same directory or in Python's path
+
 try:
     import aimon
 except ImportError:
@@ -17,7 +17,7 @@ except ImportError:
 
 def get_system_info():
     """
-    Gathers basic system information.
+    Gathering basic system information.
     """
     try:
         cpu_percent = psutil.cpu_percent(interval=1)
@@ -41,7 +41,7 @@ def get_system_info():
 def list_processes(procname=None, cmdline=None):
     """
     Lists processes with optional filtering by name or command line.
-    Returns a list of process dictionaries.
+    -Return a list of process dictionaries.
     """
     processes = []
     # Specify attributes we are interested in to potentially speed up
@@ -141,9 +141,9 @@ def get_memory_range_processes(min_mb, max_mb):
 
 def run_background_monitor(interval=60, ai_check_interval=300):
     """
-    Runs the system monitor in the background, periodically sending data to AI.
-    :param interval: Interval in seconds to collect system data.
-    :param ai_check_interval: Interval in seconds to send data to AI for analysis.
+    Run the system monitor in the background, periodically sending data to AI.
+     interval: Interval in seconds to collect system data.
+     ai_check_interval: Interval in seconds to send data to AI for analysis.
     """
     print("Running system monitor in background...")
     last_ai_check_time = time.time()
@@ -238,7 +238,7 @@ def main():
         else:
             print("No processes found matching criteria.")
 
-    # New command line functionalities
+    # New CL functionalities
     elif args.top_cpu is not None:
         top_cpu_processes = get_top_cpu_processes(args.top_cpu)
         print(f"\n--- Top {args.top_cpu} Processes by CPU Time ---")
