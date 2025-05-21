@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.Python
+build/
+dist/
+venv/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
