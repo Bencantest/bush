@@ -162,10 +162,12 @@ To stop background monitoring:
 
 ```
 bush/
+└── .gitignore            # Git ignored files
+├── README.md             # Project documentation
 ├── system_monitor.py     # System data and process monitoring
 ├── aimonitor.py          # AI-powered analysis
-├── README.md             # Project documentation
-└── .gitignore            # Git ignored files
+
+
 ```
 
 ---
