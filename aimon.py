@@ -141,7 +141,6 @@ def analyze_system_data(client, system_info, processes):
     except Exception as e:
         print(f"Error during AI analysis: {e}")
 
-
 if __name__ == "__main__":
     # block is for direct testing of aimonitor.py if needed,
     #  primary use case will be being called by system_monitor.py

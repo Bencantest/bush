@@ -263,6 +263,5 @@ def main():
     if not any([args.system, args.processes, args.run_in_background, args.top_cpu, args.mem_range]):
         parser.print_help()
 
-
 if __name__ == "__main__":
     main()
