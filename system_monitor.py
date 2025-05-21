@@ -214,6 +214,7 @@ def main():
         run_background_monitor(interval=args.interval, ai_check_interval=args.ai_interval)
         return
 
+
     # Existing command line functionalities
     if args.system:
         system_info = get_system_info()

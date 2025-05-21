@@ -129,7 +129,6 @@ def analyze_system_data(client, system_info, processes):
     else:
         prompt += "No process data available.\n"
 
-
     prompt += "\nBased on this data, identify any potential issues (high resource usage, unusual processes, potential malicious indicators) and provide concise, actionable advice. If everything looks normal, state that."
 
     try:
