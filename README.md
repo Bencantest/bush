@@ -1,25 +1,25 @@
 
 ---
 
-# 🖥️ System Monitor with AI Analysis
+#  System Monitor with AI Analysis
 
-This project provides a **Python-based system monitoring tool** (`system_monitor.py`) that leverages the `psutil` library to gather real-time system and process information. It integrates with an **AI monitoring script** (`aimonitor.py`) that uses the **Groq API** to analyze the collected data and provide intelligent advice on system performance, congestion or potential malicious activities.
-
----
-
-## 🚀 Features
-
-* **Comprehensive System Metrics**: Monitor CPU, memory, disk nd network I/O.
-* **Detailed Process Listing**: View all running processes with their PID, name, user, CPU/memory usage and command-line arguments.
-* **Process Filtering**: Filter processes by name or command-line arguments.
-* **Top CPU Consumers**: Identify processes consuming the most CPU time.
-* **Memory Usage Analysis**: Find processes using memory within a specified range (e.g., 40MB to 100MB).
-* **Background Monitoring**: Run continuously in the background to periodically collect system data.
-* **AI-Powered Insights**: Send system/process data to the Groq AI model for intelligent analysis and actionable advice on system health and security.
+ **Python-based system monitoring tool** (`system_monitor.py`) that leverages the `psutil` library to gather real-time system and process information. It integrates with an **AI monitoring script** (`aimonitor.py`) that uses the **Groq API** to analyze the collected data and provide intelligent advice on system performance, congestion or potential malicious activities.
 
 ---
 
-## 📋 Prerequisites
+##  Features
+
+* Comprehensive System Metrics: Monitor CPU, memory, disk nd network I/O.
+* Detailed Process Listing: View all running processes with their PID, name, user, CPU/memory usage and command-line arguments.
+* Process Filtering: Filter processes by name or command-line arguments.
+* Top CPU Consumers: Identify processes consuming the most CPU time.
+* Memory Usage Analysis: Find processes using memory within a specified range (e.g., 40MB to 100MB).
+* Background Monitoring: Run continuously in the background to periodically collect system data.
+* AI-Powered Insights: Send system/process data to the Groq AI model for intelligent analysis and actionable advice on system health and security.
+
+---
+
+##  Prerequisites
 
 Ensure the following are installed:
 
@@ -29,7 +29,7 @@ Ensure the following are installed:
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### 1. Clone the Repository
 
@@ -38,7 +38,7 @@ git clone https://github.com/YOUR_GITHUB_USERNAME/bush.git
 cd bush
 ```
 
-> 🔁 Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
+>  Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
 ### 2. Install Dependencies
 
@@ -48,7 +48,7 @@ pip install psutil requests
 
 ---
 
-## 🔐 Configuration (Groq API Key)
+##  Configuration (Groq API Key)
 
 Set your **Groq API key** as an environment variable.
 
@@ -74,7 +74,7 @@ export GROQ_API_KEY=YOUR_GROQ_API_KEY_HERE
 
 ---
 
-## 🛠️ Usage
+##  Usage
 
 Navigate to the project directory:
 
@@ -82,7 +82,7 @@ Navigate to the project directory:
 cd path/to/bush
 ```
 
-### 🔍 `system_monitor.py`
+###  `system_monitor.py`
 
 This script provides command-line options for system and process monitoring.
 
@@ -144,7 +144,7 @@ python aimonitor.py
 
 ---
 
-## 🛑 Terminating the Background Monitor
+##  Terminating the Background Monitor
 
 To stop background monitoring:
 
@@ -158,7 +158,7 @@ To stop background monitoring:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 bush/
@@ -172,14 +172,12 @@ bush/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to **fork** this repository, open **issues**, or submit **pull requests** if you have suggestions or improvements!
 
 ---
 
-## 📄 License
 
-This project is open-source under the **MIT License**.
 
 
