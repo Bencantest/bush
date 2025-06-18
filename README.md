@@ -34,11 +34,10 @@ Ensure the following are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/bush.git
+git clone https://github.com/Bencantest/bush.git
 cd bush
 ```
 
->  Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
 
 ### 2. Install Dependencies
 
